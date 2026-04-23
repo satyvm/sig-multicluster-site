@@ -44,6 +44,7 @@ nav:
     - Index: implementations/index.md
     - Implementation Guidelines: implementations/guidelines.md
     - Multicluster Services Implementations: implementations/mcs-implementations.md
+    - Cluster Inventory API Implementations: implementations/cluster-inventory-api-implementations.md
   - Glossary:
     - Index: references/glossary/index.md
   - Reference:
