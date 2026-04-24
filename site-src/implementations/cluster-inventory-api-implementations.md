@@ -16,6 +16,7 @@ The Cluster Inventory API has two kinds of implementations:
 ### Cluster Managers
 
 - [Open Cluster Management][ocm]: Available (shipped since OCM v0.15.0, enhanced in v1.2.0)
+- [GKE Fleet (ClusterProfile sync)][gke-fleet-sync]: Preview (Google Cloud, announced May 2025)
 
 ### ClusterProfile API Consumers
 
@@ -45,6 +46,18 @@ Initial ClusterProfile support was introduced in [OCM v0.15.0 (October 2024)][oc
 [ocm-managed-sa]: https://github.com/open-cluster-management-io/managed-serviceaccount/blob/main/pkg/addon/manager/controller/clusterprofile_cred_syncer.go
 [ocm-v0-15]: https://open-cluster-management.io/docs/release/#0150-24-oct-2024
 [ocm-v1-2]: https://open-cluster-management.io/docs/release/#120-2-february-2026
+
+### GKE Fleet (ClusterProfile sync)
+
+[GKE Fleet][gke-fleet] is Google Cloud's fleet management layer for Google Kubernetes Engine. Its [ClusterProfile sync][gke-fleet-sync] feature, available in Preview under the Pre-GA Offerings Terms, acts as a ClusterProfile provider: Fleet is the source of truth, and fleet membership changes (additions, updates, and deletions) are one-way synchronized to `ClusterProfile` objects on a designated hub cluster. Generated profiles are published in the `fleet-cluster-inventory` namespace by default and carry the label `x-k8s.io/cluster-manager=gke-fleet`.
+
+The feature was announced in the [May 8, 2025 GKE release notes][gke-fleet-sync-release]. To enable it, an operator designates a GKE cluster as the hub by setting the `fleet-clusterinventory-management-cluster=true` label. The documented procedure currently targets GKE clusters; behavior for non-GKE fleet members (such as attached clusters) is not covered by the Preview documentation. Google documents the [Argo CD ClusterProfile Syncer][gke-argocd-syncer] and [Multi-cluster Orchestrator][gke-mco] as example consumers.
+
+[gke-fleet]: https://cloud.google.com/kubernetes-engine/fleet-management/docs
+[gke-fleet-sync]: https://cloud.google.com/kubernetes-engine/fleet-management/docs/generate-inventory-for-integrations
+[gke-fleet-sync-release]: https://cloud.google.com/kubernetes-engine/docs/release-notes#May_08_2025
+[gke-argocd-syncer]: https://github.com/GoogleCloudPlatform/gke-fleet-management/tree/main/argocd-clusterprofile-syncer
+[gke-mco]: https://cloud.google.com/blog/products/containers-kubernetes/multi-cluster-orchestrator-for-cross-region-kubernetes-workloads/
 
 ### Knative Operator
 
