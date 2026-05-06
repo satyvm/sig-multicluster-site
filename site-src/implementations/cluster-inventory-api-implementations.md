@@ -15,7 +15,7 @@ The Cluster Inventory API has two kinds of implementations:
 
 ### Cluster Managers
 
-- [Open Cluster Management][ocm]: Available (shipped since OCM v0.15.0, enhanced in v1.2.0)
+- [Open Cluster Management][ocm]: Available (shipped since OCM v0.15.0, enhanced in v1.2.0; PlacementDecision API support in progress)
 - [GKE Fleet (ClusterProfile sync)][gke-fleet-sync]: Preview (Google Cloud, announced May 2025)
 
 ### ClusterProfile API Consumers
@@ -42,12 +42,16 @@ The consumer implementations target different layers:
 
 Initial ClusterProfile support was introduced in [OCM v0.15.0 (October 2024)][ocm-v0-15]. The implementation was updated in [OCM v1.2.0 (February 2026)][ocm-v1-2], where the reconciler was refactored to sync from `ManagedClusterSet` and the `ClusterProfile` spec and status fields were revised.
 
+OCM is also tracking support for the SIG Multicluster [PlacementDecision API][kep-5313] in [open-cluster-management-io/ocm#1373][ocm-placementdecision-issue]. The proposal would allow OCM to produce standardized `PlacementDecision` objects from its placement results, giving third-party consumers such as Argo CD a common interface instead of provider-specific placement integrations. If completed, this could make OCM one of the first cluster managers to produce standardized SIG Multicluster placement decisions.
+
 [ocm]: https://open-cluster-management.io/
 [ocm-clusterprofile]: https://github.com/open-cluster-management-io/ocm/tree/main/pkg/registration/hub/clusterprofile
 [ocm-cluster-proxy]: https://github.com/open-cluster-management-io/cluster-proxy/blob/main/pkg/proxyserver/controllers/clusterprofile_controller.go
 [ocm-managed-sa]: https://github.com/open-cluster-management-io/managed-serviceaccount/blob/main/pkg/addon/manager/controller/clusterprofile_cred_syncer.go
+[ocm-placementdecision-issue]: https://github.com/open-cluster-management-io/ocm/issues/1373
 [ocm-v0-15]: https://open-cluster-management.io/docs/release/#0150-24-oct-2024
 [ocm-v1-2]: https://open-cluster-management.io/docs/release/#120-2-february-2026
+[kep-5313]: https://github.com/kubernetes/enhancements/blob/master/keps/sig-multicluster/5313-placement-decision-api/README.md
 
 ### GKE Fleet (ClusterProfile sync)
 
