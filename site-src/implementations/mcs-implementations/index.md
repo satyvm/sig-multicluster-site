@@ -4,6 +4,10 @@ This document tracks downstream implementations and integrations of Multicluster
 
 Implementors and integrators of MCS API are encouraged to update this document with status information about their implementations, the versions they cover, and documentation to help users get started.
 
+## Conformance Comparisons
+
+See the [Comparisons](comparisons.md) page for conformance test results submitted by implementations. To submit a report, see the [submission instructions](reports/README.md).
+
 ## Implementation Status
 
 - [Google Cloud MCS][gke-mcs]: General Availability
