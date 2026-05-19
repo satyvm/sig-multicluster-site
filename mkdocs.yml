@@ -19,7 +19,7 @@ plugins:
   - awesome-pages
   - redirects:
       redirect_maps:
-        'guides/getting-started.md': 'implementations/mcs-implementations.md'
+        'guides/getting-started.md': 'implementations/mcs-implementations/index.md'
         'contributing/community.md': 'contributing/index.md'
 markdown_extensions:
   - admonition
@@ -43,7 +43,9 @@ nav:
   - Implementations:
     - Index: implementations/index.md
     - Implementation Guidelines: implementations/guidelines.md
-    - Multicluster Services Implementations: implementations/mcs-implementations.md
+    - Multicluster Services Implementations:
+      - Index: implementations/mcs-implementations/index.md
+      - Comparisons: implementations/mcs-implementations/comparisons.md
     - Cluster Inventory API Implementations: implementations/cluster-inventory-api-implementations.md
   - Glossary:
     - Index: references/glossary/index.md

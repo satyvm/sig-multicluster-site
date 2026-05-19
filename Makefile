@@ -25,9 +25,14 @@ install:
 	source ./venv/bin/activate && pip install -r requirements.txt
 
 
+# Generate conformance comparison pages
+.PHONY: generate-conformance
+generate-conformance:
+	source ./venv/bin/activate && python hack/generate-conformance-matrix.py
+
 # Build the documentation
 .PHONY: docs
-docs: install
+docs: install generate-conformance
 	# Ensure site dir exists
 	mkdir -p site
 
