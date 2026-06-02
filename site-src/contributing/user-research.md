@@ -33,6 +33,9 @@ and feedback will directly influence how we solve these challenges.
 
 ### Signup
 
+Please use the survey link:
+[Open the signup form](https://docs.google.com/forms/d/e/1FAIpQLSehxKHMwhTek6vJV8eqhQ8XG05IGhb-lrzi_ahQNb4OrIpatg/viewform).
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehxKHMwhTek6vJV8eqhQ8XG05IGhb-lrzi_ahQNb4OrIpatg/viewform?embedded=true" width="640" height="2065" frameborder="0" marginheight="0" marginwidth="0">Embedded form is loading…</iframe>
 
 ### Introduction and Consent for User Interviews
