@@ -78,6 +78,10 @@ Some documents from previous quarters were uploaded [here][sig-mc-previous-quart
 [sig-net-2019-11-sync]: https://docs.google.com/document/d/1AqBaxNX0uS0fb_fSpVL9c8TmaSP7RYkWO8U_SdJH67k/preview
 [meeting-notes]: https://tinyurl.com/sig-multicluster-notes
 
+## User Research
+
+Check out the [user research page](user-research.md) for information on our UXR subteam and its projects.
+
 ## Presentations and Talks
 
 [//]: # (Should we move this section in another tab or subtab? Maybe in the 'Reference' section or the 'Blog' section?)
