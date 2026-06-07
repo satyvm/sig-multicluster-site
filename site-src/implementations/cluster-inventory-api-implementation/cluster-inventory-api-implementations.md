@@ -1,8 +1,8 @@
-# Implementations
+# Cluster Inventory API Implementations
 
 This document tracks downstream implementations and integrations of the Cluster Inventory API (ClusterProfile API) and provides status and resource references for them.
 
-For background on the API itself, see the [ClusterProfile API Overview](../concepts/cluster-profile-api.md), [KEP-4322 (Cluster Inventory API)](https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster/4322-cluster-inventory), and [KEP-5339 (ClusterProfile credentials plugin)](https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster/5339-clusterprofile-plugin-credentials), which defines the pluggable exec-based mechanism consumers use to obtain credentials for member clusters.
+For background on the API itself, see the [ClusterProfile API Overview](../../concepts/cluster-profile-api.md), [KEP-4322 (Cluster Inventory API)](https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster/4322-cluster-inventory), and [KEP-5339 (ClusterProfile credentials plugin)](https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster/5339-clusterprofile-plugin-credentials), which defines the pluggable exec-based mechanism consumers use to obtain credentials for member clusters.
 
 Implementors and integrators of the Cluster Inventory API are encouraged to update this document with status information about their implementations, the versions they cover, and documentation to help users get started.
 
