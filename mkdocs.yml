@@ -47,7 +47,7 @@ nav:
       - Index: implementations/mcs-implementations/index.md
       - Comparisons: implementations/mcs-implementations/comparisons.md
     - Cluster Inventory API:
-      - Implementations: implementations/cluster-inventory-api-implementation/cluster-inventory-api-implementations.md
+      - Index: implementations/cluster-inventory-api-implementation/index.md
       - Guide for Cluster Manager Implementers: implementations/cluster-inventory-api-implementation/guide-cluster-manager-implementers.md
       - Guide for ClusterProfile API Consumers: implementations/cluster-inventory-api-implementation/guide-cluster-profile-consumers.md
       - Migration Notes: implementations/cluster-inventory-api-implementation/migration-notes.md

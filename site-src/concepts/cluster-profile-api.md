@@ -6,7 +6,7 @@ This document provides an overview of the [ClusterProfile API](https://github.co
 
 A Cluster Profile is a namespace-level resource and essentially represents an individual member of the Cluster Inventory
 that details properties and status of a cluster. This API proposes a standardized interface that defines how cluster information should be presented
-and interacted with across different platforms and [implementations](../implementations/cluster-inventory-api-implementation/cluster-inventory-api-implementations.md).
+and interacted with across different platforms and [implementations](../implementations/cluster-inventory-api-implementation/index.md).
 
 You can read more details about the API in the [KEP-4322](https://github.com/kubernetes/enhancements/blob/master/keps/sig-multicluster/4322-cluster-inventory/README.md).
 
